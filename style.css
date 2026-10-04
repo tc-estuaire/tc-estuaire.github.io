@@ -1,0 +1,231 @@
+/* --- REGLES GLOBALES ET VARIABLES --- */
+:root {
+    --primary-color: #0056b3;
+    --primary-hover: #003d80;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #212529;
+    --text-muted: #6c757d;
+    --border-radius: 12px;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* --- BANDEAU INFO DEFILANT --- */
+.banner-info {
+    background-color: #fff3cd;
+    border-bottom: 1px solid #ffeeba;
+    color: #856404;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.marquee-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 100%;
+    animation: defilement 50s linear infinite;
+}
+
+.banner-info:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+.badge {
+    background-color: #ffc107;
+    color: #212529;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+@keyframes defilement {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* --- HERO / HEADER --- */
+.hero {
+    background: linear-gradient(135deg, #0056b3 0%, #002d5d 100%);
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+.hero .subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* --- MAIN & SECTION INTRO --- */
+main {
+    flex: 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.intro-card {
+    background: var(--card-bg);
+    padding: 20px 24px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 25px;
+}
+
+.intro-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.intro-card p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.instruction {
+    font-weight: 600;
+    margin-top: 12px;
+    color: var(--text-color);
+}
+
+/* --- GRILLE CATEGORIES --- */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.card-nav h3 {
+    font-size: 1.2rem;
+}
+
+.card-arrow {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+}
+
+/* Style spécifique Saint-Nazaire */
+.bg-saint-nazaire {
+    background-color: #FFCC00;
+    color: #212529;
+}
+
+.bg-saint-nazaire .card-arrow {
+    color: #212529;
+}
+
+/* Style spécifique Nantes */
+.bg-nantes {
+    background-color: #006633;
+    color: #ffffff;
+}
+
+.bg-nantes .card-arrow {
+    color: #ffffff;
+}
+
+.card-nav:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card-nav:hover .card-arrow {
+    transform: translateX(6px);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e9ecef;
+    padding: 20px 0;
+    margin-top: auto;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
