@@ -3,234 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACCUEIL | TC ESTUAIRE</title>
-    <style>
-        /* Variables de couleurs */
-        :root {
-            --primary: #ff9800;        /* Orange */
-            --primary-dark: #e08900;
-            --bg-page: #f4f4f2;       /* Gris clair */
-            --info-bg: #ffffff;       /* Fond blanc */
-            --info-border: #ff9800;   /* Rappel orange */
-            --stran-bleu: #003366;    /* Bleu */
-            --stran-jaune: #ffcc00;  /* Jaune */
-            --tan-vert: #006633;     /* Vert */
-            --alert-rouge: #d32f2f;     /* Rouge alerte */
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-page);
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Bandeau défilant rouge tout en haut */
-        .marquee-banner {
-            background-color: var(--alert-rouge);
-            color: #ffffff;
-            padding: 10px 0;
-            font-size: 0.80rem;
-            font-weight: bold;
-            overflow: hidden;
-            white-space: nowrap;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .marquee-content {
-            display: inline-block;
-            padding-left: 100%;
-            animation: marquee 40s linear infinite;
-        }
-
-        .marquee-content a {
-            color: #ffeb3b;
-            text-decoration: underline;
-            margin-left: 5px;
-        }
-
-        .marquee-content a:hover {
-            color: #ffffff;
-        }
-
-        /* Animation du défilement */
-        @keyframes marquee {
-            0% {
-                transform: translate(0, 0);
-            }
-            100% {
-                transform: translate(-100%, 0);
-            }
-        }
-
-        /* Pause le défilement au survol de la souris */
-        .marquee-banner:hover .marquee-content {
-            animation-play-state: paused;
-        }
-
-        /* HEADER */
-        header {
-            background-color: var(--primary);
-            color: white;
-            padding: 0.8rem 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.5rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        main {
-            flex: 1;
-            padding: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        /* Bandeau Info */
-        .info-box {
-            background-color: var(--info-bg);
-            border: 1px solid var(--info-border);
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 2rem;
-            text-align: left;
-            box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-        }
-
-        .info-box h2 {
-            color: var(--primary-dark);
-            margin-top: 0;
-            font-size: 1.2rem;
-            text-align: center;
-        }
-
-        .info-box p {
-            font-size: 0.9rem;
-            margin: 5px 0;
-            line-height: 1.4;
-        }
-
-        /* Section des liens */
-        .network-selection {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .network-card {
-            border-radius: 5px;
-            padding: 1.5rem;
-            text-align: center;
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 1.3rem;
-            font-weight: bold;
-            transition: transform 0.2s, background-color 0.2s;
-            box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
-        }
-
-        .network-card:hover {
-            transform: scale(1.02);
-        }
-
-        /* Carte Saint-Nazaire */
-        .network-card-sn {
-            background-color: var(--stran-bleu);
-            border-bottom: 5px solid var(--stran-jaune);
-        }
-
-        .network-card-sn:hover {
-            background-color: #004080;
-            color: var(--stran-jaune);
-        }
-
-        /* Carte Nantes */
-        .network-card-nts {
-            background-color: var(--tan-vert);
-            border-bottom: 5px solid #ffffff;
-        }
-
-        .network-card-nts:hover {
-            background-color: #008040;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #3d3d3d;
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-            font-size: 0.85rem;
-        }
-
-        footer a { 
-            color: var(--primary); 
-            text-decoration: none; 
-        }
-
-        .compte_insta {
-            display: inline-block;
-            margin-top: 10px;
-            font-weight: bold;
-            background: rgba(255,255,255,0.1);
-            padding: 5px 10px;
-            border-radius: 4px;
-        }
-
-        @media (max-width: 600px) {
-            .network-selection { 
-                grid-template-columns: 1fr; 
-            }
-        }
-    </style>
+    <title>ACCUEIL 2.3 | TC ESTUAIRE</title>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Police Google Fonts pour un look moderne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Bandeau rouge défilant -->
-    <div class="marquee-banner">
+    <!-- Bandeau d'information défilant -->
+    <div class="banner-info">
         <div class="marquee-content">
-            INFO : Des mises à jour régulières sont actuellement effectuées sur le site ; certaines pages peuvent être temporairement indisponibles. Merci de votre compréhension
+            <span class="badge">INFO</span>
+            <p>Des mises à jour régulières sont actuellement effectuées sur le site ; certaines pages peuvent être temporairement indisponibles. Merci de votre compréhension.</p>
         </div>
     </div>
 
-    <header>
-        <h1>Bienvenue sur le site TC ESTUAIRE</h1>
+    <!-- En-tête / Header -->
+    <header class="hero">
+        <div class="container">
+            <h1>Bienvenue sur TC ESTUAIRE</h1>
+            <p class="subtitle">L'histoire et l'évolution des réseaux de transport de Saint-Nazaire et Nantes</p>
+        </div>
     </header>
 
-    <main>
-        <section class="info-box">
+    <!-- Contenu Principal -->
+    <main class="container">
+        <section class="intro-card">
             <h2>Avant tout...</h2>
-            <p>L'objectif du site est de retracer une partie de l'histoire et de l'évolution du réseau de Saint-Nazaire et Nantes.</p>
-			<p>Évidemment, aucun copier-coller de sites existants, il s'agit uniquement d'informations personnelles ou collectées
-			par mes soins dans des articles de presse.</p>
-			<p>Commencez par choisir une catégorie ci-dessous :</p>
+            <p>L'objectif du site est de retracer une partie de l'histoire et de l'évolution des réseaux de transport de Saint-Nazaire et Nantes.</p>
+            <p class="instruction">Commencez par choisir une catégorie :</p>
         </section>
 
-        <div class="network-selection">
-            <a href="saint-nazaire.html" class="network-card network-card-sn">
-                SAINT-NAZAIRE
+        <section class="categories-grid">
+            <a href="saint-nazaire.html" class="card-nav">
+                <h3>SAINT-NAZAIRE</h3>
+                <span class="card-arrow">&rarr;</span>
             </a>
-            <a href="nantes.html" class="network-card network-card-nts">
-                NANTES
+            <a href="nantes.html" class="card-nav">
+                <h3>NANTES</h3>
+                <span class="card-arrow">&rarr;</span>
             </a>
-        </div>
+        </section>
     </main>
 
+    <!-- Pied de page Footer -->
     <footer>
-        <p>2026 TC ESTUAIRE - Tous droits réservés</p>
-        <p><a href="mentions-legales.html">Mentions légales</a> | Version 2.2</p>
-        <p><a href="https://www.instagram.com/tc.estuaire/" target="_blank" rel="noopener" class="compte_insta">SUIVEZ TC ESTUAIRE SUR INSTAGRAM :)</a></p>
+        <div class="container footer-content">
+            <p>&copy; 2026 TC ESTUAIRE - Tous droits réservés V2.3</p>
+            <div class="footer-links">
+                <a href="tc-estuaire.github.io/mentions-legales.html">Mentions légales</a> |
+                <a href="https://www.instagram.com/tc.estuaire/" target="_blank" rel="noopener">Suivez TC ESTUAIRE sur Instagram</a>
+            </div>
+        </div>
     </footer>
 
 </body>
