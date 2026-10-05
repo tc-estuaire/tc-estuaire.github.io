@@ -1,4 +1,3 @@
-/* --- REGLES GLOBALES ET VARIABLES --- */
 :root {
     --primary-color: #0056b3;
     --primary-hover: #003d80;
@@ -34,7 +33,13 @@ body {
     width: 100%;
 }
 
-/* --- BANDEAU INFO DEFILANT --- */
+main {
+    flex: 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* BANDEAU INFO DEFILANT */
 .banner-info {
     background-color: #fff3cd;
     border-bottom: 1px solid #ffeeba;
@@ -70,15 +75,11 @@ body {
 }
 
 @keyframes defilement {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
-/* --- HERO / HEADER --- */
+/* HERO / HEADER & BOUTONS RETOUR */
 .hero {
     background: linear-gradient(135deg, #0056b3 0%, #002d5d 100%);
     color: white;
@@ -98,13 +99,22 @@ body {
     opacity: 0.9;
 }
 
-/* --- MAIN & SECTION INTRO --- */
-main {
-    flex: 1;
-    padding-top: 25px;
-    padding-bottom: 25px;
+.btn-back {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 0.2s ease;
 }
 
+.btn-back:hover {
+    transform: translateX(-4px);
+    text-decoration: underline;
+}
+
+/* CARTE D'INTRO DU CONTENU & ALERTES */
 .intro-card {
     background: var(--card-bg);
     padding: 20px 24px;
@@ -117,6 +127,8 @@ main {
     color: var(--primary-color);
     margin-bottom: 10px;
     font-size: 1.3rem;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 8px;
 }
 
 .intro-card p {
@@ -130,65 +142,194 @@ main {
     color: var(--text-color);
 }
 
-/* --- GRILLE CATEGORIES --- */
-.categories-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.card-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 25px;
+/* Boîte d'alerte spécifique */
+.info-box {
+    background-color: #fa8072 !important;
+    border: 3px solid #ff0000 !important;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.info-box h2 {
+    color: #b30000 !important;
+    margin-top: 0;
+    border-bottom: none;
+}
+
+.info-box p {
+    color: #000;
+    font-weight: 500;
+}
+
+/* GRILLE CATEGORIES (Page d'accueil) */
+.categories-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
     text-decoration: none;
-    font-weight: 700;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: var(--border-radius);
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.card-nav h3 {
-    font-size: 1.2rem;
+.btn-category:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
 }
 
-.card-arrow {
-    font-size: 1.3rem;
-    transition: transform 0.3s ease;
-}
-
-/* Style spécifique Saint-Nazaire */
 .bg-saint-nazaire {
     background-color: #FFCC00;
-    color: #212529;
+    color: #000000;
 }
 
-.bg-saint-nazaire .card-arrow {
-    color: #212529;
-}
-
-/* Style spécifique Nantes */
 .bg-nantes {
     background-color: #006633;
     color: #ffffff;
 }
 
-.bg-nantes .card-arrow {
-    color: #ffffff;
+/* MENUS DÉROULANTS (Lignes) */
+.dropdown {
+    margin: 1rem 0;
 }
 
-.card-nav:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-hover);
+.dropdown button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    width: 100%;
+    text-align: left;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card-nav:hover .card-arrow {
-    transform: translateX(6px);
+.dropdown button:after {
+    content: '▼';
+    font-size: 0.8rem;
+    margin-left: 10px;
 }
 
-/* --- FOOTER --- */
+.dropdown button:hover {
+    background-color: #e08900;
+}
+
+.dropdown-content {
+    display: none;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    max-height: 280px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    background-color: #ffffff;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    margin-bottom: 0.5rem;
+    padding: 10px 14px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-content li:last-child {
+    margin-bottom: 0;
+}
+
+/* COULEURS SPÉCIFIQUES DES LIGNES */
+/* 1986 & 1997 */
+.ligne-a, .ligne-b, .ligne-c, .ligne-d, 
+.ligne-e, .ligne-f, .ligne-g, .ligne-h, 
+.ligne-k, .ligne-l, .ligne-m, .ligne-n, 
+.ligne-p, .ligne-pc { 
+    background-color: #df0031; 
+}
+
+/* 2000 */
+.ligne10 { background-color: #df0031; }
+.ligne20 { background-color: #aa7aaf; }
+.ligne30 { background-color: #27a2dd; }
+.ligne40 { background-color: #00937a; }
+.ligne45 { background-color: #f398bf; }
+.ligne60 { background-color: #3eb754; }
+.ligne70 { background-color: #80003d; }
+.ligne71 { background-color: #f4812a; }
+
+/* TYBUS 2000 */
+.tybus1 { background-color: #ffd423; color: #000 !important; }
+.tybus2 { background-color: #006f54; }
+.tybus3 { background-color: #df3a3f; }
+.tybus4 { background-color: #0094c2; }
+.tybus5 { background-color: #7b77b8; }
+.tybus6 { background-color: #ec7832; }
+.tybus7 { background-color: #ea028c; } 
+.tybus8 { background-color: #ea028c; }
+.tybus9 { background-color: #a63b8a; }
+
+/* LIGNES 2012 */
+.helyce { background-color: #ff0000; }
+.u1 { background-color: #f39200; }
+.u2 { background-color: #94c23d; }
+.u3 { background-color: #78b7e5; }
+.u4 { background-color: #a7358b; }
+.l13 { background-color: #004f8e; }
+
+/* TYBUS 2012 */
+.t1 { background-color: #b17c5e; }
+.t2 { background-color: #b7a8ce; }
+.t3 { background-color: #ea9fc5; }
+.t4 { background-color: #15af97; }
+.t5 { background-color: #6f6f6f; }
+
+/* COMPLÉMENTAIRES 2012 */
+.c1 { background-color: #0069b4; }
+.c2 { background-color: #00aeef; }
+.sd { background-color: #ffdd00; color: #333 !important; }
+.spp { background-color: #5c866d; }
+
+/* LIGNES 2026 */
+.h1 { background-color: #ff0000; }
+.h2 { background-color: #0069b4; }
+.h3 { background-color: #019640; }
+.l4 { background-color: #831f82; }
+.l5 { background-color: #e6007e; }
+.l6 { background-color: #afca0b; }
+.l7 { background-color: #f7a600; }
+.l8 { background-color: #00a1de; }
+.l9 { background-color: #008387; }
+.l305 { background-color: #ee776d; }
+.navettecentre { background-color: #e99cc4; }
+.navettebrais { background-color: #7e3a45; }
+
+/* FOOTER */
 footer {
     background-color: #ffffff;
     border-top: 1px solid #e9ecef;
@@ -220,7 +361,15 @@ footer {
     text-decoration: underline;
 }
 
-/* --- RESPONSIVE MOBILE --- */
+.compte_insta {
+    display: inline-block;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* RESPONSIVE MOBILE */
 @media (max-width: 600px) {
     .hero h1 {
         font-size: 1.6rem;
@@ -229,3 +378,4 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+}
