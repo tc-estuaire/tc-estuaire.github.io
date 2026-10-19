@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACCUEIL | TC ESTUAIRE</title>
-    <!-- Lien vers fichier CSS -->
+    <!-- Lien vers CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Police Google Fonts -->
+    <!-- Police Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -26,32 +26,50 @@
             <h1>Bienvenue sur TC ESTUAIRE</h1>
             <p class="subtitle">L'histoire et l'évolution des réseaux de transport de Saint-Nazaire et Nantes</p>
         </div>
+
+        <!-- Barre de navigation -->
+        <nav class="main-nav">
+            <div class="container nav-container">
+                <a href="index.html" class="nav-link active">ACCUEIL</a>
+                
+                <!-- Menu déroulant STRAN -->
+                <div class="nav-dropdown">
+                    <button class="nav-dropbtn">SAINT-NAZAIRE &#9662;</button>
+                    <div class="nav-dropdown-content">
+                        <a href="lignes-saint-nazaire.html">Les lignes depuis 1997</a>
+                    </div>
+                </div>
+                
+                <!-- Menu déroulant TAN -->
+                <div class="nav-dropdown">
+                    <button class="nav-dropbtn">NANTES &#9662;</button>
+                    <div class="nav-dropdown-content">
+                        <a href="https://onedrive.live.com/edit?cid=3cd1e6f98b3d7b97&id=3CD1E6F98B3D7B97!s9024bcd2be8f4faa89a424e394fdf090&resi
+						d=3CD1E6F98B3D7B97!s9024bcd2be8f4faa89a424e394fdf090&ithint=file%2Cxlsx&embed=1&em=2&wdHideGridlines=True&wdInConfigura
+						tor=True%2CTrue&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy8zY2QxZTZmOThiM2Q3Yjk3L0lRVFN2Q1NRajc2cVQ0bWtKT09VX
+						2ZDUUFXMGx2bVJYR2I4T1VXVU9BM0Y4alVrP2VtPTImd2RIaWRlR3JpZGxpbmVzPVRydWUmd2RJbkNvbmZpZ3VyYXRvcj1UcnVlJndkSW5Db25maWd1cmF0b3I9VHJ1ZQ&wdo=2">Tableau de Suivi déploiement SAE</a>
+                    </div>
+                </div>
+
+                <a href="error.html" class="nav-link">LIENS EXTERNES &#x2197</a>
+            </div>
+        </nav>
     </header>
 
-    <!-- Contenu Principal -->
+    <!-- Conteneur Principal -->
     <main class="container">
         <section class="intro-card">
             <h2>Avant tout...</h2>
             <p>L'objectif du site est de retracer une partie de l'histoire et de l'évolution des réseaux de transport de Saint-Nazaire et Nantes.</p>
-            <p class="instruction">Commencez par choisir une catégorie :</p>
-        </section>
-
-        <section class="categories-grid">
-            <a href="saint-nazaire.html" class="card-nav">
-                <h3>SAINT-NAZAIRE</h3>
-                <span class="card-arrow">&rarr;</span>
-            </a>
-            <a href="nantes.html" class="card-nav">
-                <h3>NANTES</h3>
-                <span class="card-arrow">&rarr;</span>
-            </a>
+            <p class="instruction">Mise à jour V2.4 du site avec une nouvelle arborescence pour accéder directement aux contenus de Nantes et Saint-Nazaire.</p></p>
+			<p>Vous pouvez proposer vos suggestions pour améliorer ce site sur <a href="https://framaforms.org/formulaire-de-contact-1777542253" target="_blank" rel="noopener">ce lien</a></p>
         </section>
     </main>
 
     <!-- Pied de page Footer -->
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2026 TC ESTUAIRE - Tous droits réservés V2.3</p>
+            <p>&copy; 2026 TC ESTUAIRE - Tous droits réservés V2.4</p>
             <div class="footer-links">
                 <a href="mentions-legales.html">Mentions légales</a> |
                 <a href="https://www.instagram.com/tc.estuaire/" target="_blank" rel="noopener">TC ESTUAIRE sur Instagram</a>
