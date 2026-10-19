@@ -4,93 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIGNES SAINT-NAZAIRE | TC ESTUAIRE</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Lien vers fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Police Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-	<div class="banner-info">
+    <!-- Bandeau d'information défilant -->
+    <div class="banner-info">
         <div class="marquee-content">
             <span class="badge">INFO</span>
             <p>Des mises à jour régulières sont actuellement effectuées sur le site ; certaines pages peuvent être temporairement indisponibles. Merci de votre compréhension.</p>
         </div>
     </div>
-	
-	<header class="hero hero-sn">
+    
+    <!-- En-tête / Header -->
+    <header class="hero hero-sn">
         <div class="container">
             <h1>Les lignes de SAINT-NAZAIRE des années 80 à aujourd'hui</h1>
-            <p class="subtitle">Découvrez l'ancien réseau de 1986 au réseau actuel, dans chaque section vous avez accès aux listes des lignes pour faire apparaitre les lignes cliquez sur une catégorie.</p>
+            <p class="subtitle">Découvrez l'ancien réseau de 1986 au réseau actuel. Cliquez sur une catégorie dans chaque section pour faire apparaître les lignes.</p>
         </div>
+
+        <!-- Barre de navigation -->
+        <nav class="main-nav">
+            <div class="container nav-container">
+                <a href="index.html" class="nav-link">ACCUEIL</a>
+                
+                <!-- Menu Déroulant ST-NAZAIRE -->
+                <div class="nav-dropdown">
+                    <button class="nav-dropbtn active">SAINT-NAZAIRE &#9662;</button>
+                    <div class="nav-dropdown-content">
+                        <a href="lignes-saint-nazaire.html">Les lignes depuis 1997</a>
+                    </div>
+                </div>
+                
+                <!-- Menu Déroulant TAN -->
+                <div class="nav-dropdown">
+                    <button class="nav-dropbtn">NANTES &#9662;</button>
+                    <div class="nav-dropdown-content">
+                        <a href="suivi-nantes.html">Tableau de suivi déploiement</a>
+                        <a href="paperbus-nantes.html">Flotte tramways VAN</a>
+                    </div>
+                </div>
+
+                <a href="liens-web.html" class="nav-link external-link">LIENS EXTERNES</a>
+            </div>
+        </nav>
     </header>
 
-    <main>
-		    <section>
+    <!-- Contenu Principal -->
+    <main class="container">
+        
+        <section class="intro-card">
             <h2>Le réseau dans les années 80</h2>
-            <p><strong>| Cette liste des lignes ci-dessous est en phase de test. | </strong></p>
-			
-			<div class="dropdown">
+            <p><strong>| Cette liste des lignes ci-dessous est en phase de test. |</strong></p>
+            
+            <div class="dropdown">
                 <button type="button" onclick="toggleDropdown('urbaines1986')">LIGNES URBAINES</button>
                 <div id="urbaines1986" class="dropdown-content">
                     <ul>
-                        <li class="ligne-a">Ligne A - Méan Centre <> Heinlex Hôpital</li>
-						<li class="ligne-c">Ligne C - Gare SNCF <> Le Grand Pez</li>
-                        <li class="ligne-e">Ligne E - Gare SNCF <> Point du jour</li>
-                        <li class="ligne-f">Ligne F - Bert <> Kerlédé</li>
-                        <li class="ligne-k">Ligne K - Gare SNCF <> Avocettes</li>
-						<li class="ligne-n">Ligne N (nocturne) - Gare SNCF <> Heinlex IUT</li>
-						<li class="ligne-p">Ligne P - Saint-Brévin-les-Pins <> République</li>
-						<li class="ligne-pc">Ligne PC - Gare SNCF <> Circulaire, Dauphiné</li>
-						<li class="ligne-tto">Ligne TTO - Le Croisic <> Saint-Nazaire</li>
-                    </ul>
-                </div>
-            </div>
-			
-			<div class="dropdown">
-                <button type="button" onclick="toggleDropdown('scolaire1986')">LIGNES SCOLAIRES</button>
-                <div id="scolaire1986" class="dropdown-content">
-                    <ul>
-                        <li class="ligne-d">Ligne D - Gare SNCF <> Dissignac</li>
-						<li class="ligne-g">Ligne G - Petit Maroc <> Petit Caporal</li>
-						<li class="ligne-h">Ligne H - Trignac Mairie <> République</li>
-                        <li class="ligne-l">Ligne L - Centre-ville <> Saint-André-des-Eaux</li>
-						<li class="ligne-m">Ligne M - Centre-ville <> Quatre Vents</li>
+                        <li class="ligne-a">Ligne A - Méan Centre &lt;&gt; Heinlex Hôpital</li>
+                        <li class="ligne-c">Ligne C - Gare SNCF &lt;&gt; Le Grand Pez</li>
+                        <li class="ligne-e">Ligne E - Gare SNCF &lt;&gt; Point du jour</li>
+                        <li class="ligne-f">Ligne F - Bert &lt;&gt; Kerlédé</li>
+                        <li class="ligne-k">Ligne K - Gare SNCF &lt;&gt; Avocettes</li>
+                        <li class="ligne-n">Ligne N (nocturne) - Gare SNCF &lt;&gt; Heinlex IUT</li>
+                        <li class="ligne-p">Ligne P - Saint-Brévin-les-Pins &lt;&gt; République</li>
+                        <li class="ligne-pc">Ligne PC - Gare SNCF &lt;&gt; Circulaire, Dauphiné</li>
+                        <li class="ligne-tto">Ligne TTO - Le Croisic &lt;&gt; Saint-Nazaire</li>
                     </ul>
                 </div>
             </div>
             
-        </section>
-	
-	    <section>
-            <h2>Réorganisation du réseau en 1997</h2>
-            <p><strong>| Les couleurs des lignes ci-dessous ne sont pas exactes | </strong></p>
-			
-			<div class="dropdown">
-                <button type="button" onclick="toggleDropdown('urbaines1997')">LIGNES URBAINES</button>
-                <div id="urbaines1997" class="dropdown-content">
+            <div class="dropdown">
+                <button type="button" onclick="toggleDropdown('scolaire1986')">LIGNES SCOLAIRES</button>
+                <div id="scolaire1986" class="dropdown-content">
                     <ul>
-                        <li class="ligne-a">Ligne A - Méan Centre <> Université</li>
-                        <li class="ligne-b">Ligne B - Hôtel de ville <> Montoir</li>
-						<li class="ligne-c">Ligne C - Gare SNCF <> Le Grand Pez</li>
-                        <li class="ligne-e">Ligne E - Gare SNCF <> Brais</li>
-                        <li class="ligne-f">Ligne F - Trignac (mairie) <> Université</li>
-                        <li class="ligne-g">Ligne G - Ecomusée <> Landettes</li>
-                        <li class="ligne-k">Ligne K - Gare SNCF <> Avocettes</li>
-						<li class="ligne-n">Ligne N (nocturne) - Gare SNCF <> Université</li>
-						<li class="ligne-p">Ligne P - Saint-Brévin-les-Pins <> Sous préfecture</li>
-						<li class="ligne-pc">Ligne PC - Gare SNCF <> Circulaire, Bouletterie</li>
+                        <li class="ligne-d">Ligne D - Gare SNCF &lt;&gt; Dissignac</li>
+                        <li class="ligne-g">Ligne G - Petit Maroc &lt;&gt; Petit Caporal</li>
+                        <li class="ligne-h">Ligne H - Trignac Mairie &lt;&gt; République</li>
+                        <li class="ligne-l">Ligne L - Centre-ville &lt;&gt; Saint-André-des-Eaux</li>
+                        <li class="ligne-m">Ligne M - Centre-ville &lt;&gt; Quatre Vents</li>
                     </ul>
                 </div>
             </div>
-			
-			<div class="dropdown">
+        </section>
+
+        <section class="intro-card">
+            <h2>Réorganisation du réseau en 1997</h2>
+            <p><strong>| Les couleurs des lignes ci-dessous ne sont pas exactes |</strong></p>
+            
+            <div class="dropdown">
+                <button type="button" onclick="toggleDropdown('urbaines1997')">LIGNES URBAINES</button>
+                <div id="urbaines1997" class="dropdown-content">
+                    <ul>
+                        <li class="ligne-a">Ligne A - Méan Centre &lt;&gt; Université</li>
+                        <li class="ligne-b">Ligne B - Hôtel de ville &lt;&gt; Montoir</li>
+                        <li class="ligne-c">Ligne C - Gare SNCF &lt;&gt; Le Grand Pez</li>
+                        <li class="ligne-e">Ligne E - Gare SNCF &lt;&gt; Brais</li>
+                        <li class="ligne-f">Ligne F - Trignac (mairie) &lt;&gt; Université</li>
+                        <li class="ligne-g">Ligne G - Ecomusée &lt;&gt; Landettes</li>
+                        <li class="ligne-k">Ligne K - Gare SNCF &lt;&gt; Avocettes</li>
+                        <li class="ligne-n">Ligne N (nocturne) - Gare SNCF &lt;&gt; Université</li>
+                        <li class="ligne-p">Ligne P - Saint-Brévin-les-Pins &lt;&gt; Sous préfecture</li>
+                        <li class="ligne-pc">Ligne PC - Gare SNCF &lt;&gt; Circulaire, Bouletterie</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="dropdown">
                 <button type="button" onclick="toggleDropdown('scolaire1997')">LIGNES SCOLAIRES</button>
                 <div id="scolaire1997" class="dropdown-content">
                     <ul>
-                        <li class="ligne-d">Ligne D - Gare SNCF <> Dissignac</li>
-                        <li class="ligne-l">Ligne L - Centre-ville <> Saint-André-des-Eaux</li>
-						<li class="ligne-m">Ligne M - Centre-ville <> Quatre Vents</li>
+                        <li class="ligne-d">Ligne D - Gare SNCF &lt;&gt; Dissignac</li>
+                        <li class="ligne-l">Ligne L - Centre-ville &lt;&gt; Saint-André-des-Eaux</li>
+                        <li class="ligne-m">Ligne M - Centre-ville &lt;&gt; Quatre Vents</li>
                     </ul>
                 </div>
             </div>
@@ -99,40 +130,38 @@
                 <button type="button" onclick="toggleDropdown('tybus1997')">LIGNES TY'BUS (périurbaines)</button>
                 <div id="tybus1997" class="dropdown-content">
                     <ul>
-                        <li class="tybus1">Ligne TY'BUS 1 - Centre-ville <> Saint-André-des-Eaux</li>
-                        <li class="tybus2">Ligne TY'BUS 2 - Centre-ville <> Saint-Joachim</li>
-                        <li class="tybus3">Ligne TY'BUS 3 - Centre-ville <> Saint-Malo-de-Guersac</li>
-                        <li class="tybus5">Ligne TY'BUS 5 - Centre-ville <> Donges</li>
-                        <li class="tybus6">Ligne TY'BUS 6 - Centre-ville <> Paimboeuf </li>
-                        <li class="tybus7">Ligne TY'BUS 7 - Saint-Brévin-les-Pins <> Paimboeuf</li>
-                        <li class="tybus8">Ligne TY'BUS 8 - Centre-ville <> Saint-Brévin-l'Océan</li>
+                        <li class="tybus1">Ligne TY'BUS 1 - Centre-ville &lt;&gt; Saint-André-des-Eaux</li>
+                        <li class="tybus2">Ligne TY'BUS 2 - Centre-ville &lt;&gt; Saint-Joachim</li>
+                        <li class="tybus3">Ligne TY'BUS 3 - Centre-ville &lt;&gt; Saint-Malo-de-Guersac</li>
+                        <li class="tybus5">Ligne TY'BUS 5 - Centre-ville &lt;&gt; Donges</li>
+                        <li class="tybus6">Ligne TY'BUS 6 - Centre-ville &lt;&gt; Paimboeuf</li>
+                        <li class="tybus7">Ligne TY'BUS 7 - Saint-Brévin-les-Pins &lt;&gt; Paimboeuf</li>
+                        <li class="tybus8">Ligne TY'BUS 8 - Centre-ville &lt;&gt; Saint-Brévin-l'Océan</li>
                     </ul>
                 </div>
             </div>
-            
         </section>
-	
-        <section>
+
+        <section class="intro-card">
             <h2>STRAN 2000, on passe la seconde !</h2>
             <p>À cette période, le réseau était marqué par la présence du <strong>Strany</strong>.</p>
-            <p>Ce personnage accompagnait la communication du réseau et notamment sur les affiches horaires sur les abribus.</p>
-            <p>Les bus arboraient des designs jaune et bleu avec un schéma des lignes sur les côtés des bus.</p>
-			<p>La STRAN s'est modernisée avec l'apparition de nouveaux services comme TY'BUS TAXI.</p>
-			<p>Point culture : À l’époque, presque toutes les lignes passaient par l’ancien hôpital du Moulin du Pé, situé à seulement quelques pas du 
-				<a href="https://maps.app.goo.gl/v2m6kivDYn8Vp2it9" target="_blank">lycée Hôtelier Sainte-Anne</a>.</p>
+            <p>Ce personnage accompagnait la communication du réseau, notamment sur les affiches horaires des abribus.</p>
+            <p>Les bus arboraient des designs jaune et bleu avec un schéma des lignes sur les flancs.</p>
+            <p>La STRAN s'est modernisée avec l'apparition de nouveaux services comme TY'BUS TAXI.</p>
+            <p>Point culture : À l’époque, presque toutes les lignes passaient par l’ancien hôpital du Moulin du Pé, situé à seulement quelques pas du <a href="https://maps.app.goo.gl/v2m6kivDYn8Vp2it9" target="_blank" rel="noopener">lycée Hôtelier Sainte-Anne</a>.</p>
             
             <div class="dropdown">
                 <button type="button" onclick="toggleDropdown('urbaines2000')">LIGNES URBAINES</button>
                 <div id="urbaines2000" class="dropdown-content">
                     <ul>
-                        <li class="ligne10">Ligne 10 - Méan Centre <> Bouletterie</li>
-                        <li class="ligne20">Ligne 20 - Heinlex LEP <> Bert</li>
-                        <li class="ligne30">Ligne 30 - Hôtel de Ville <> Université</li>
-                        <li class="ligne40">Ligne 40 - Gare SNCF <> Chemin de la Source</li>
-                        <li class="ligne45">Ligne 45 - Trignac <> Villès - Mollé</li>
-                        <li class="ligne60">Ligne 60 - Raoul Dufy <> Université</li>
-                        <li class="ligne70">Ligne 70 - La Belle Hautière <> rais</li>
-                        <li class="ligne71">Ligne 71 - Le Cormier <> Ecomusée</li>
+                        <li class="ligne10">Ligne 10 - Méan Centre &lt;&gt; Bouletterie</li>
+                        <li class="ligne20">Ligne 20 - Heinlex LEP &lt;&gt; Bert</li>
+                        <li class="ligne30">Ligne 30 - Hôtel de Ville &lt;&gt; Université</li>
+                        <li class="ligne40">Ligne 40 - Gare SNCF &lt;&gt; Chemin de la Source</li>
+                        <li class="ligne45">Ligne 45 - Trignac &lt;&gt; Villès - Mollé</li>
+                        <li class="ligne60">Ligne 60 - Raoul Dufy &lt;&gt; Université</li>
+                        <li class="ligne70">Ligne 70 - La Belle Hautière &lt;&gt; Brais</li>
+                        <li class="ligne71">Ligne 71 - Le Cormier &lt;&gt; Ecomusée</li>
                     </ul>
                 </div>
             </div>
@@ -141,169 +170,180 @@
                 <button type="button" onclick="toggleDropdown('tybus2000')">LIGNES TY'BUS (périurbaines)</button>
                 <div id="tybus2000" class="dropdown-content">
                     <ul>
-                        <li class="tybus1">Ligne TY'BUS 1 - Centre-ville <> Saint-André-des-Eaux</li>
-                        <li class="tybus2">Ligne TY'BUS 2 - Centre-ville <> Saint-Joachim</li>
-                        <li class="tybus3">Ligne TY'BUS 3 - Centre-ville <> Saint-Malo-de-Guersac</li>
-                        <li class="tybus4">Ligne TY'BUS 4 - Centre-ville <> Mayun</li>
-                        <li class="tybus5">Ligne TY'BUS 5 - Centre-ville <> Donges</li>
-                        <li class="tybus6">Ligne TY'BUS 6 - Centre-ville <> Pornichet Gare </li>
-                        <li class="tybus7">Ligne TY'BUS 7 - Centre-ville <> Pornichet</li>
-                        <li class="tybus8">Ligne TY'BUS 8 - Centre-ville <> Saint-Brévin-l'Océan</li>
-                        <li class="tybus9">Ligne TY'BUS 9 - Centre-ville <> Besné</li>
+                        <li class="tybus1">Ligne TY'BUS 1 - Centre-ville &lt;&gt; Saint-André-des-Eaux</li>
+                        <li class="tybus2">Ligne TY'BUS 2 - Centre-ville &lt;&gt; Saint-Joachim</li>
+                        <li class="tybus3">Ligne TY'BUS 3 - Centre-ville &lt;&gt; Saint-Malo-de-Guersac</li>
+                        <li class="tybus4">Ligne TY'BUS 4 - Centre-ville &lt;&gt; Mayun</li>
+                        <li class="tybus5">Ligne TY'BUS 5 - Centre-ville &lt;&gt; Donges</li>
+                        <li class="tybus6">Ligne TY'BUS 6 - Centre-ville &lt;&gt; Pornichet Gare</li>
+                        <li class="tybus7">Ligne TY'BUS 7 - Centre-ville &lt;&gt; Pornichet</li>
+                        <li class="tybus8">Ligne TY'BUS 8 - Centre-ville &lt;&gt; Saint-Brévin-l'Océan</li>
+                        <li class="tybus9">Ligne TY'BUS 9 - Centre-ville &lt;&gt; Besné</li>
                     </ul>
                 </div>
             </div>
-			
-			<div class="dropdown">
-				<button type="button" onclick="toggleDropdown('navettePort')">NAVETTE</button>
-				<div id="navettePort" class="dropdown-content">
-					<ul>
-						<li style="background-color: #003366;">Navette du Port - Centre République <> Le Port</li>
-					</ul>
+            
+            <div class="dropdown">
+                <button type="button" onclick="toggleDropdown('navettePort')">NAVETTE</button>
+                <div id="navettePort" class="dropdown-content">
+                    <ul>
+                        <li style="background-color: #003366;">Navette du Port - Centre République &lt;&gt; Le Port</li>
+                    </ul>
                 </div>
             </div>
-            
         </section>
 
-        <section>
+        <section class="intro-card">
             <h2>Le réseau de 2012, place aux nouveautés !</h2>
-            <p>Le réseau STRAN avait considéralement évolué en 2012 :</p>
+            <p>Le réseau STRAN avait considérablement évolué en 2012 :</p>
             <ul>
                 <li><strong>Arrivée du BHNS</strong> avec les Mercedes-Benz Citaro G Facelift.</li>
-				<li><strong>Information voyageurs en temps réel</strong> (écrans aux arrêts, appli Stran Mobile, ...).</li>
-				<li><strong>Création du pôle d'échanges</strong> sur le parvis de la Gare SNCF de Saint-Nazaire.</li>
-			</ul>
-			<p>Evidemment d'autres évolutions ont été aussi présente mais ça serait trop long à tout lister...</p>
-			<p>A NOTE : Le réseau 2012 sera présent jusqu'au <strong>vendredi 23 janvier 2026</strong> au soir, cloture avec la ligne S/D et Helyce</p>
+                <li><strong>Information voyageurs en temps réel</strong> (écrans aux arrêts, appli Stran Mobile, ...).</li>
+                <li><strong>Création du pôle d'échanges</strong> sur le parvis de la Gare SNCF de Saint-Nazaire.</li>
+            </ul>
+            <p>À NOTER : Le réseau 2012 sera présent jusqu'au <strong>vendredi 23 janvier 2026</strong> au soir, clôture avec la ligne S/D et Hélyce.</p>
             
             <div class="dropdown">
-                <button onclick="toggleDropdown('bhns')">LIGNE BHNS</button>
+                <button type="button" onclick="toggleDropdown('bhns')">LIGNE BHNS</button>
                 <div id="bhns" class="dropdown-content">
                     <ul>
-                        <li class="helyce">Ligne Hélyce - Montoir / Trignac <> Université</li>
+                        <li class="helyce">Ligne Hélyce - Montoir / Trignac &lt;&gt; Université</li>
                     </ul>
                 </div>
             </div>
 
             <div class="dropdown">
-                <button onclick="toggleDropdown('urbaines')">LIGNES URBAINES</button>
+                <button type="button" onclick="toggleDropdown('urbaines')">LIGNES URBAINES</button>
                 <div id="urbaines" class="dropdown-content">
                     <ul>
-                        <li class="u1">Ligne U1 - Gare SNCF <> Pré Hembert</li>
-                        <li class="u2">Ligne U2 - Voltaire — Landettes <> Le Grand Pez</li>
-                        <li class="u3">Ligne U3 - Halles de Penhoët <> Chemin de la Source</li>
-                        <li class="u4">Ligne U4 - Petit Maroc <> Saint-André-des-Eaux</li>
-                        <li class="l13">Ligne L13 - Cité Sanitaire <> Gare de la Baule</li>
+                        <li class="u1">Ligne U1 - Gare SNCF &lt;&gt; Pré Hembert</li>
+                        <li class="u2">Ligne U2 - Voltaire — Landettes &lt;&gt; Le Grand Pez</li>
+                        <li class="u3">Ligne U3 - Halles de Penhoët &lt;&gt; Chemin de la Source</li>
+                        <li class="u4">Ligne U4 - Petit Maroc &lt;&gt; Saint-André-des-Eaux</li>
+                        <li class="l13">Ligne L13 - Cité Sanitaire &lt;&gt; Gare de la Baule</li>
                     </ul>
                 </div>
             </div>
 
             <div class="dropdown">
-                <button onclick="toggleDropdown('periurbaines')">LIGNES TY'BUS (périurbaines)</button>
+                <button type="button" onclick="toggleDropdown('periurbaines')">LIGNES TY'BUS (périurbaines)</button>
                 <div id="periurbaines" class="dropdown-content">
                     <ul>
-                        <li class="t3">Ligne T3 - Gare SNCF <> La Chapelle-des-Marais</li>
-                        <li class="t4">Ligne T4 - Gare SNCF <> Gare de Donges</li>
-                        <li class="t5">Ligne T5 - Gare SNCF <> Besné — ZA Harrois [ligne mutualisée]</li>
-						<p style="color:#FF0000; padding-left: 1rem;">Les lignes ci-dessous étaient présentes de 2012 à 2017 (T1) et 2018 (T2)</p>
-						<li class="t1">Ligne T1 - Cité Sanitaire <> Pornichet (fermeture - fusion avec ligne 3 Lila Presqu'île)</li>
-						<li class="t2">Ligne T2 - Gare SNCF <> Saint-André-des-Eaux (fermeture - fusion avec ligne U4)</li>
+                        <li class="t3">Ligne T3 - Gare SNCF &lt;&gt; La Chapelle-des-Marais</li>
+                        <li class="t4">Ligne T4 - Gare SNCF &lt;&gt; Gare de Donges</li>
+                        <li class="t5">Ligne T5 - Gare SNCF &lt;&gt; Besné — ZA Harrois [ligne mutualisée]</li>
+                    </ul>
+                    <p style="color:#FF0000; padding: 10px 0 5px 0;">Les lignes ci-dessous étaient présentes de 2012 à 2017 (T1) et 2018 (T2) :</p>
+                    <ul>
+                        <li class="t1">Ligne T1 - Cité Sanitaire &lt;&gt; Pornichet (fusion avec ligne 3 Lila Presqu'île)</li>
+                        <li class="t2">Ligne T2 - Gare SNCF &lt;&gt; Saint-André-des-Eaux (fusion avec ligne U4)</li>
                     </ul>
                 </div>
             </div>
 
             <div class="dropdown">
-                <button onclick="toggleDropdown('complementaires')">LIGNES complémentaires</button>
+                <button type="button" onclick="toggleDropdown('complementaires')">LIGNES COMPLÉMENTAIRES</button>
                 <div id="complementaires" class="dropdown-content">
                     <ul>
-                        <li class="c1">Ligne C1 - Gare SNCF <> Mairie de Trignac</li>
-                        <li class="c2">Ligne C2 - Gare SNCF <> Trévélan</li>
+                        <li class="c1">Ligne C1 - Gare SNCF &lt;&gt; Mairie de Trignac</li>
+                        <li class="c2">Ligne C2 - Gare SNCF &lt;&gt; Trévélan</li>
                     </ul>
                 </div>
             </div>
-			
-			<div class="dropdown">
-				<button type="button" onclick="toggleDropdown('servicecomplementaires')">SERVICES</button>
-				<div id="servicecomplementaires" class="dropdown-content">
-					<ul>
-						<li style="background-color: #e4006a;">ZeniBus - Parking du Théâtre <> Hôtel de Ville</li>
-						<li class="sd">Ligne S/D (Soir/Dimanche)</li>
-                        <li class="spp">Ligne SPP (Service Spécial Prézégat)</li>
-					</ul>
-                </div>
-            </div>
-			
-        </section>
-
-        <section>
-            <h2>Le réseau en 2026</h2>
-            <p>Refonte totale du réseau dans le cadre de l'arrivé des nouveaux bus électriques Heuliez GX 437 Linium.</p>
-			<p>L'ouverture du nouveau réseau survient le <strong>samedi 24 janvier 2026</strong> au petit matin.</p>
-            <ul>
-                <li>Le réseau comporte 3 lignes BHNS (H1 / H2 / H3) et 10 lignes standard (4, 5, 6, 7, 8, 9 et L13).</li>
-                <li><strong>YCEO FLEX</strong> (anciennement TY'BUS TAXI): le service est pris en charge avec un abonnement et une refonte aussi des arrêts desservis par le service.</li>
-				<li>Fin de la restriction pour l'abonnement 4-17 ans, ils peuvent désormais utiliser la ligne 8 avant/après les cours.</li>
-			</ul>
-			
+            
             <div class="dropdown">
-                <button onclick="toggleDropdown('bhns-2026')">LIGNES BHNS</button>
-                <div id="bhns-2026" class="dropdown-content">
+                <button type="button" onclick="toggleDropdown('servicecomplementaires')">SERVICES</button>
+                <div id="servicecomplementaires" class="dropdown-content">
                     <ul>
-                        <li class="h1">Ligne H1 - Montoir l’Ormois <> Gavy</li>
-                        <li class="h2">Ligne H2 - Trignac Les Forges <> Plages des Jaunais</li>
-                        <li class="h3">Ligne H3 - Petit Maroc <> Kerlédé</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button onclick="toggleDropdown('urbaines-2026')">LIGNES STANDARD</button>
-                <div id="urbaines-2026" class="dropdown-content">
-                    <ul>
-                        <li class="l4">Ligne 4 - Le Plessis <> Chalands Fleuris</li>
-                        <li class="l5">Ligne 5 - Penhoët <> Le Grand Pez</li>
-                        <li class="l6">Ligne 6 - Voltaire-Landettes <> Océanis 2</li>
-                        <li class="l7">Ligne 7 - Gare SNCF <> Océanis 1</li>
-                        <li class="l8">Ligne 8 - Gare SNCF <> La Chapelle-des-Marais</li>
-                        <li class="l9">Ligne 9 - Gare SNCF <> Donges Gare</li>
-                        <li class="l305">Ligne 305 - Gare SNCF <> Besné — ZA Harrois</li>
-						<li class="l13">Ligne L13 - Cité Sanitaire <> Gare de la Baule</li>
-                    </ul>
-                </div>
-            </div>
-			
-			<div class="dropdown">
-				<button type="button" onclick="toggleDropdown('navette')">NAVETTES</button>
-				<div id="navette" class="dropdown-content">
-					<ul>
-						<li class="navettecentre">CENTRE-VILLE - Parking du Théâtrev <> Hôtel de Ville</li>
-                        <li class="navettebrais">BRAIS - Gare SNCF <> Saint-Nazaire Brais</li>
-					</ul>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button onclick="toggleDropdown('fermeture-lignes-2026')">Les suppressions de lignes</button>
-                <div id="fermeture-lignes-2026" class="dropdown-content">
-                    <ul>
-                        <li class="c1">Ligne C1 - Gare SNCF <> Mairie de Trignac</li>
+                        <li style="background-color: #e4006a;">ZeniBus - Parking du Théâtre &lt;&gt; Hôtel de Ville</li>
                         <li class="sd">Ligne S/D (Soir/Dimanche)</li>
                         <li class="spp">Ligne SPP (Service Spécial Prézégat)</li>
                     </ul>
                 </div>
             </div>
-            <p>Pour en connaître d'avantage, veuillez consulter le site officiel <a href="https://www.yceo-mobilite.fr/reseau2026/" target="_blank">Mon réseau 2026</a></p>
         </section>
+
+        <section class="intro-card">
+            <h2>Le réseau en 2026</h2>
+            <p>Refonte totale du réseau dans le cadre de l'arrivée des nouveaux bus électriques Heuliez GX 437 Linium.</p>
+            <p>L'ouverture du nouveau réseau survient le <strong>samedi 24 janvier 2026</strong> au petit matin.</p>
+            <ul>
+                <li>Le réseau comporte 3 lignes BHNS (H1 / H2 / H3) et 10 lignes standard (4, 5, 6, 7, 8, 9 et L13).</li>
+                <li><strong>YCÉO FLEX</strong> (anciennement TY'BUS TAXI) : le service est pris en charge avec un abonnement et une refonte des arrêts desservis.</li>
+                <li>Fin de la restriction pour l'abonnement 4-17 ans : ils peuvent désormais utiliser la ligne 8 avant/après les cours.</li>
+            </ul>
+            
+            <div class="dropdown">
+                <button type="button" onclick="toggleDropdown('bhns-2026')">LIGNES BHNS</button>
+                <div id="bhns-2026" class="dropdown-content">
+                    <ul>
+                        <li class="h1">Ligne H1 - Montoir l’Ormois &lt;&gt; Gavy</li>
+                        <li class="h2">Ligne H2 - Trignac Les Forges &lt;&gt; Plages des Jaunais</li>
+                        <li class="h3">Ligne H3 - Petit Maroc &lt;&gt; Kerlédé</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button type="button" onclick="toggleDropdown('urbaines-2026')">LIGNES STANDARD</button>
+                <div id="urbaines-2026" class="dropdown-content">
+                    <ul>
+                        <li class="l4">Ligne 4 - Le Plessis &lt;&gt; Chalands Fleuris</li>
+                        <li class="l5">Ligne 5 - Penhoët &lt;&gt; Le Grand Pez</li>
+                        <li class="l6">Ligne 6 - Voltaire-Landettes &lt;&gt; Océanis 2</li>
+                        <li class="l7">Ligne 7 - Gare SNCF &lt;&gt; Océanis 1</li>
+                        <li class="l8">Ligne 8 - Gare SNCF &lt;&gt; La Chapelle-des-Marais</li>
+                        <li class="l9">Ligne 9 - Gare SNCF &lt;&gt; Donges Gare</li>
+                        <li class="l305">Ligne 305 - Gare SNCF &lt;&gt; Besné — ZA Harrois</li>
+                        <li class="l13">Ligne L13 - Cité Sanitaire &lt;&gt; Gare de la Baule</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button type="button" onclick="toggleDropdown('navette')">NAVETTES</button>
+                <div id="navette" class="dropdown-content">
+                    <ul>
+                        <li class="navettecentre">CENTRE-VILLE - Parking du Théâtre &lt;&gt; Hôtel de Ville</li>
+                        <li class="navettebrais">BRAIS - Gare SNCF &lt;&gt; Saint-Nazaire Brais</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button type="button" onclick="toggleDropdown('fermeture-lignes-2026')">LES SUPPRESSIONS DE LIGNES</button>
+                <div id="fermeture-lignes-2026" class="dropdown-content">
+                    <ul>
+                        <li class="c1">Ligne C1 - Gare SNCF &lt;&gt; Mairie de Trignac</li>
+                        <li class="sd">Ligne S/D (Soir/Dimanche)</li>
+                        <li class="spp">Ligne SPP (Service Spécial Prézégat)</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 15px;">Pour en savoir plus, veuillez consulter le site officiel <a href="https://www.yceo-mobilite.fr/reseau2026/" target="_blank" rel="noopener">Mon réseau 2026</a>.</p>
+        </section>
+
     </main>
     
-	<footer>
+    <!-- Pied de page Footer -->
+    <footer>
         <div class="container footer-content">
-            <p>&copy; 2026 TC ESTUAIRE - Tous droits réservés V2.3</p>
+            <p>&copy; 2026 TC ESTUAIRE - Tous droits réservés V2.4</p>
             <div class="footer-links">
-                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="mentions-legales.html">Mentions légales</a> |
+                <a href="https://www.instagram.com/tc.estuaire/" target="_blank" rel="noopener">TC ESTUAIRE sur Instagram</a>
             </div>
         </div>
     </footer>
-<script src="script.js"></script>
+
+    <!-- Script de gestion des menus déroulants de lignes -->
+    <script>
+        function toggleDropdown(id) {
+            var content = document.getElementById(id);
+            if (content) {
+                content.classList.toggle("show");
+            }
+        }
+    </script>
 </body>
 </html>
