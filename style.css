@@ -415,6 +415,7 @@ main {
 .navettecentre { background-color: #e99cc4; }
 .navettebrais { background-color: #7e3a45; }
 
+
 /* --- FOOTER --- */
 footer {
     background-color: #ffffff;
@@ -484,8 +485,8 @@ footer {
 
 .intro-logo {
     width: 70px;
-    height: auto;  /* PAS TOUCHE */
+    height: auto; /* PAS TOUCHE */
     display: block;
     margin: 0 auto; /* Centre logo */
-    max-width: 100%
+    max-width: 100%;
 }
