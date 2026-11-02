@@ -483,8 +483,9 @@ footer {
 }
 
 .intro-logo {
-    width: 10px;
+    width: 40px;
     height: auto;  /* PAS TOUCHE */
     display: block;
     margin: 0 auto; /* Centre logo */
+    max-width: 100%
 }
