@@ -480,11 +480,11 @@ footer {
 /* --- LOGO --- */
 .card-logo-container {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom:25px;
 }
 
 .intro-logo {
-    width: 70px;
+    width: 100px;
     height: auto; /* PAS TOUCHE */
     display: block;
     margin: 0 auto; /* Centre logo */
