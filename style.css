@@ -415,6 +415,19 @@ main {
 .navettecentre { background-color: #e99cc4; }
 .navettebrais { background-color: #7e3a45; }
 
+/* LIGNES CAPATLANTIC */
+.ligne-a-capatlantic { background-color: #ff0000; }
+.ligne-b-capatlantic { background-color: #0069b4; }
+.ligne-c-capatlantic { background-color: #019640; }
+.ligne-d-capatlantic { background-color: #831f82; }
+.ligne-e-capatlantic { background-color: #e6007e; }
+.ligne-g-capatlantic { background-color: #afca0b; }
+.ligne-h-capatlantic { background-color: #f7a600; }
+.ligne-j-capatlantic { background-color: #00a1de; }
+.ligne-k-capatlantic { background-color: #008387; }
+.ligne-l-capatlantic { background-color: #ee776d; }
+.ligne-m-capatlantic { background-color: #e99cc4; }
+.ligne-n-capatlantic { background-color: #7e3a45; }
 
 /* --- FOOTER --- */
 footer {
