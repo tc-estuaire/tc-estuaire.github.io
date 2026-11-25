@@ -350,14 +350,21 @@ main {
     margin-bottom: 0;
 }
 
-/* COULEURS SPÉCIFIQUES DES LIGNES */
-/* 1986 & 1997 */
-.ligne-a, .ligne-b, .ligne-c, .ligne-d, 
-.ligne-e, .ligne-f, .ligne-g, .ligne-h, 
-.ligne-k, .ligne-l, .ligne-m, .ligne-n, 
-.ligne-p, .ligne-pc { 
-    background-color: #df0031; 
-}
+/* COULEURS SPÉCIFIQUES DES LIGNES 1986 & 1997 */
+.ligne-a { background-color: #df0031; }
+.ligne-b { background-color: #df0031; }
+.ligne-c { background-color: #df0031; }
+.ligne-d { background-color: #df0031; }
+.ligne-e { background-color: #df0031; }
+.ligne-f { background-color: #df0031; }
+.ligne-g { background-color: #df0031; }
+.ligne-h { background-color: #df0031; } 
+.ligne-k { background-color: #df0031; }
+.ligne-l { background-color: #df0031; }
+.ligne-m { background-color: #df0031; }
+.ligne-n { background-color: #df0031; }
+.ligne-p { background-color: #df0031; }
+.ligne-pc { background-color: #df0031; }
 
 /* 2000 */
 .ligne10 { background-color: #df0031; }
@@ -439,6 +446,8 @@ main {
 .ligne-7-lilapresquile { background-color: #f7a600; }
 .ligne-8-lilapresquile { background-color: #00a1de; }
 .ligne-9-lilapresquile { background-color: #008387; }
+
+/* LIGNES FUTUR LIGNES LILA */
 
 /* --- FOOTER --- */
 footer {
