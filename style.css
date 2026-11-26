@@ -422,7 +422,7 @@ main {
 .navettecentre { background-color: #e99cc4; }
 .navettebrais { background-color: #7e3a45; }
 
-/* LIGNES CAPATLANTIC */
+/* LIGNES CAPATLANTIC REVOIR LES COULEURS CI-DESSOUS*/
 #capatlantic2000 .ligne-a-capatlantic { background-color: #ff0000; }
 #capatlantic2000 .ligne-b-capatlantic { background-color: #0069b4; }
 #capatlantic2000 .ligne-c-capatlantic { background-color: #019640; }
@@ -436,20 +436,37 @@ main {
 #capatlantic2000 .ligne-m-capatlantic { background-color: #e99cc4; }
 #capatlantic2000 .ligne-n-capatlantic { background-color: #7e3a45; }
 
-/* LIGNES FUTUR LIGNES LILA  */
-.ligne-1-lilapresquile { background-color: #ff0000; }
-.ligne-2-lilapresquile { background-color: #0069b4; }
-.ligne-l13-lilapresquile { background-color: #019640; }
-.ligne-4-lilapresquile { background-color: #831f82; }
-.ligne-5-lilapresquile { background-color: #e6007e; }
-.ligne-6-lilapresquile { background-color: #afca0b; }
-.ligne-7-lilapresquile { background-color: #f7a600; }
-.ligne-8-lilapresquile { background-color: #00a1de; }
-.ligne-9-lilapresquile { background-color: #008387; }
+/* LIGNES LILA PRESQUILE STRUCTURANTES CI-DESSOUS */
+#lila-presquile-structurantes .ligne-1-lilapresquile { background-color: #ff0000; }
+#lila-presquile-structurantes .ligne-2-lilapresquile { background-color: #0069b4; }
+#lila-presquile-structurantes .ligne-l13-lilapresquile { background-color: #019640; }
 
-.ligne-n1-lila { background-color: #ff0000; }
-.ligne-n2-lila { background-color: #ff0000; }
-.ligne-n3-lila { background-color: #ff0000; }
+/* LIGNES LILA PRESQUILE PROXIMITE CI-DESSOUS */ 
+#lila-presquile-proximite .ligne-4-lilapresquile { background-color: #831f82; }
+#lila-presquile-proximite .ligne-5-lilapresquile { background-color: #e6007e; }
+#lila-presquile-proximite .ligne-6-lilapresquile { background-color: #afca0b; }
+#lila-presquile-proximite .ligne-7-lilapresquile { background-color: #f7a600; }
+#lila-presquile-proximite .ligne-8-lilapresquile { background-color: #00a1de; }
+#lila-presquile-proximite .ligne-9-lilapresquile { background-color: #008387; }
+
+/* LIGNES LILA PRESQUILE LOCAL CI-DESSOUS */ 
+#lila-presquile-locale .ligne-10-lilapresquile { background-color: #831f82; }
+#lila-presquile-locale .ligne-20.est-lilapresquile { background-color: #831f82; }
+#lila-presquile-locale .ligne-20.ouest-lilapresquile { background-color: #831f82; }
+#lila-presquile-locale .ligne-30-lilapresquile { background-color: #831f82; }
+
+/* LIGNES LILA PRESQUILE LOCAL CI-DESSOUS */ 
+#lila-presquile-resa .ligne-A1-lilapresquile { background-color: #831f82; }
+#lila-presquile-resa .ligne-A2-lilapresquile { background-color: #831f82; }
+
+/* FUTUR RESEAU LILA  */
+#lila-2026 .ligne-l2-lila { background-color: #831f82; }
+#lila-2026 .ligne-l3-lila { background-color: #831f82; }
+#lila-2026 .ligne-l4-lila { background-color: #831f82; }
+#lila-2026 .ligne-l5-lila { background-color: #831f82; }
+#lila-2026-navette .ligne-n1-lila { background-color: #ff0000; }
+#lila-2026-navette .ligne-n2-lila { background-color: #ff0000; }
+#lila-2026-navette .ligne-n3-lila { background-color: #ff0000; }
 
 /* --- FOOTER --- */
 footer {
