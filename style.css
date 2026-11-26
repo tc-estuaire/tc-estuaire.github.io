@@ -437,14 +437,15 @@ main {
 #capatlantic2000 .ligne-n-capatlantic { background-color: #7e3a45; }
 
 /* LIGNES LILA PRESQUILE STRUCTURANTES CI-DESSOUS */
-#lila-presquile-structurantes .ligne-1-lilapresquile { background-color: #ff0000; }
-#lila-presquile-structurantes .ligne-2-lilapresquile { background-color: #0069b4; }
-#lila-presquile-structurantes .ligne-l13-lilapresquile { background-color: #019640; }
+#lila-presquile-structurantes .ligne-1-lilapresquile { background-color: #3B82F6; }
+#lila-presquile-structurantes .ligne-2-lilapresquile { background-color: #E2101A; }
+#lila-presquile-structurantes .ligne-l13-lilapresquile { background-color: #074E8F; }
 
 /* LIGNES LILA PRESQUILE PROXIMITE CI-DESSOUS */ 
-#lila-presquile-proximite .ligne-4-lilapresquile { background-color: #831f82; }
-#lila-presquile-proximite .ligne-5-lilapresquile { background-color: #e6007e; }
-#lila-presquile-proximite .ligne-6-lilapresquile { background-color: #afca0b; }
+#lila-presquile-proximite .ligne-4-lilapresquile { background-color: #48BCC4; }
+#lila-presquile-proximite .ligne-5-lilapresquile { background-color: #8966A8; }
+#lila-presquile-proximite .ligne-6-lilapresquile { background-color: #EC7204; }
+/* COULEURS A REVOIR CI-DESSOUS */ 
 #lila-presquile-proximite .ligne-7-lilapresquile { background-color: #f7a600; }
 #lila-presquile-proximite .ligne-8-lilapresquile { background-color: #00a1de; }
 #lila-presquile-proximite .ligne-9-lilapresquile { background-color: #008387; }
