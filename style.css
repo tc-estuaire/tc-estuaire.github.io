@@ -460,13 +460,14 @@ main {
 #lila-presquile-resa .ligne-A2-lilapresquile { background-color: #831f82; }
 
 /* FUTUR RESEAU LILA  */
-#lila-2026 .ligne-l2-lila { background-color: #831f82; }
-#lila-2026 .ligne-l3-lila { background-color: #831f82; }
-#lila-2026 .ligne-l4-lila { background-color: #831f82; }
-#lila-2026 .ligne-l5-lila { background-color: #831f82; }
-#lila-2026-navette .ligne-n1-lila { background-color: #ff0000; }
-#lila-2026-navette .ligne-n2-lila { background-color: #ff0000; }
-#lila-2026-navette .ligne-n3-lila { background-color: #ff0000; }
+#lila-2026 .ligne-l2-lila { background-color: #00B2BA; }
+#lila-2026 .ligne-l3-lila { background-color: #ED1C24; }
+#lila-2026 .ligne-l4-lila { background-color: #7F9FD3; }
+#lila-2026 .ligne-l5-lila { background-color: #004C6D; }
+
+#lila-2026-navette .ligne-n1-lila { background-color: #FAA61A; }
+#lila-2026-navette .ligne-n2-lila { background-color: #E5A8C4; }
+#lila-2026-navette .ligne-n3-lila { background-color: #EF59A1; }
 
 /* --- FOOTER --- */
 footer {
