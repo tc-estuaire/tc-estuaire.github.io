@@ -436,31 +436,33 @@ main {
 #capatlantic2000 .ligne-m-capatlantic { background-color: #e99cc4; }
 #capatlantic2000 .ligne-n-capatlantic { background-color: #7e3a45; }
 
-/* LIGNES LILA PRESQUILE STRUCTURANTES CI-DESSOUS */
-#lila-presquile-structurantes .ligne-1-lilapresquile { background-color: #3B82F6; }
+/* LIGNES LILA PRESQUILE REGULIERE */
+#lila-presquile-structurantes .ligne-1-lilapresquile { background-color: #3EA3DC; }
 #lila-presquile-structurantes .ligne-2-lilapresquile { background-color: #E2101A; }
 #lila-presquile-structurantes .ligne-l13-lilapresquile { background-color: #074E8F; }
 
-/* LIGNES LILA PRESQUILE PROXIMITE CI-DESSOUS */ 
+/* LIGNES LILA PRESQUILE PROXIMITE CI-DESSOUS VERIFICATION FAITE*/ 
 #lila-presquile-proximite .ligne-4-lilapresquile { background-color: #48BCC4; }
 #lila-presquile-proximite .ligne-5-lilapresquile { background-color: #8966A8; }
-#lila-presquile-proximite .ligne-6-lilapresquile { background-color: #EC7204; }
-/* COULEURS A REVOIR CI-DESSOUS */ 
-#lila-presquile-proximite .ligne-7-lilapresquile { background-color: #f7a600; }
-#lila-presquile-proximite .ligne-8-lilapresquile { background-color: #00a1de; }
-#lila-presquile-proximite .ligne-9-lilapresquile { background-color: #008387; }
+#lila-presquile-proximite .ligne-6-lilapresquile { background-color: #F3AA67; }
 
-/* LIGNES LILA PRESQUILE LOCAL CI-DESSOUS */ 
-#lila-presquile-locale .ligne-10-lilapresquile { background-color: #831f82; }
-#lila-presquile-locale .ligne-20.est-lilapresquile { background-color: #831f82; }
-#lila-presquile-locale .ligne-20.ouest-lilapresquile { background-color: #831f82; }
-#lila-presquile-locale .ligne-30-lilapresquile { background-color: #831f82; }
+/* COULEURS A REVOIR CI-DESSOUS VERIFICATION FAITE*/ 
+#lila-presquile-proximite .ligne-7-lilapresquile { background-color: #882830; }
+#lila-presquile-proximite .ligne-8-lilapresquile { background-color: #005A55; }
+#lila-presquile-proximite .ligne-9-lilapresquile { background-color: #098156; }
 
-/* LIGNES LILA PRESQUILE LOCAL CI-DESSOUS */ 
-#lila-presquile-resa .ligne-A1-lilapresquile { background-color: #831f82; }
+/* LIGNES LILA PRESQUILE LOCAL CI-DESSOUS VERIFICATION FAITE*/ 
+#lila-presquile-locale .ligne-10-lilapresquile { background-color: #F59C28; }
+#lila-presquile-locale .ligne-20.est-lilapresquile { background-color: #009989; }
+#lila-presquile-locale .ligne-20.ouest-lilapresquile { background-color: #85BE4C; }
+#lila-presquile-locale .ligne-30-lilapresquile { background-color: #18b196; }
+
+/* LIGNES LILA PRESQUILE LOCAL CI-DESSOUS VERIFICATION FAITE*/ 
+#lila-presquile-resa .ligne-A1-lilapresquile { background-color: #3a5285; }
+/* LIGNES LILA PRESQUILE LOCAL CI-DESSOUS A VERIFIER*/ 
 #lila-presquile-resa .ligne-A2-lilapresquile { background-color: #831f82; }
 
-/* FUTUR RESEAU LILA  */
+/* FUTUR RESEAU LILA VERIFICATION FAITE*/
 #lila-2026 .ligne-l2-lila { background-color: #00B2BA; }
 #lila-2026 .ligne-l3-lila { background-color: #ED1C24; }
 #lila-2026 .ligne-l4-lila { background-color: #7F9FD3; }
